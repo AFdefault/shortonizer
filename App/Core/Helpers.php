@@ -1,16 +1,15 @@
 <?php
 
 namespace App\Core;
-
+require ("config.php");
 final class Helpers
 {
     private array $config;
 
     public function __construct()
     {
-        $this->config = [
-            'app_url' => 'http://localhost:8080',
-        ];
+        global $config;
+        $this->config = $config;
     }
 
     public static function errorResponse(string $message, int $code = 500): void
