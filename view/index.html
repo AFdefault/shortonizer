@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Very Simple Shortonizer</title>
+    <link href="/lib/main.css" rel="stylesheet"/>
+    <script type="text/javascript" src="/lib/main.js"></script>
+</head>
+<body>
+<div class="app">
+    <div class="header">
+    <h4>Very, very simple URL Shortonizer</h4>
+</div>
+<form onsubmit="formSubmit(this);return false" name="shortonizer">
+    <label for="url">Ссылка которую нужно сократить</label>
+    <input type="text" id="url" name="url" placeholder="Введите url">
+    <button type="submit">Скукожить</button>
+</form>
+
+<div class="resultBlock">
+    <label for="result" id="message">Ваша ссылка готова:</label>
+    <input type="text" id="result" disabled></input>
+    <button onclick="copyLink()">Скопировать</button>
+</div>
+    </div>
+
+</body>
+</html>
